@@ -291,6 +291,7 @@ img {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-item-text {
@@ -422,4 +423,23 @@ img {
 
 .footer-social-wrapper .social-list {
   gap: 16px;
+}
+
+.social-list-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-icon {
+  fill: var(--icon-color, #f4f4fd);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-list-link:hover .social-link-icon,
+.social-list-link:focus .social-link-icon {
+  fill: #ffffff;
 }
